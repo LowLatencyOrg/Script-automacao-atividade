@@ -24,7 +24,7 @@ echo "Verificando a existência do Node"
 		echo "Criando dockerfile do site"
 cat << 'DOCKERFILE_EOF' > Dockerfile
 FROM node:20-alpine
-WORKDIR /app
+WORKDIR
 COPY . .
 RUN npm install
 EXPOSE 3333
